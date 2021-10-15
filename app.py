@@ -25,7 +25,7 @@ def barnesAndNoble():
     my_account = driver.find_element_by_xpath("//*[@id=\"rhf_header_element\"]/nav/div/div[2]/ul[2]/li[1]")
     signin = driver.find_element_by_xpath("//*[@id=\"rhf_header_element\"]/nav/div/div[2]/ul[2]/li[1]/div/dd/a[1]")
     action.move_to_element(my_account).move_to_element(signin).click().perform()
-    time.sleep(10)
+    time.sleep(5)
 
 
     driver.switch_to_frame(driver.find_element_by_xpath("/html/body/div[6]/div/iframe"))
@@ -34,7 +34,7 @@ def barnesAndNoble():
 
     driver.switch_to_frame(5)
     mailField = driver.find_element_by_xpath("//*[@id=\"email\"]")
-    time.sleep(10)
+    time.sleep(5)
     mailField.send_keys("muchabaiwatinashe@gmail.com")
 
     submit = driver.find_element_by_xpath("//*[@id=\"resetPwSubmit\"]")
